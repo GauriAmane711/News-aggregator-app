@@ -4,15 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>News Aggregator</title>
+  <link rel="stylesheet" href="styles/index.css">
 </head>
+
 <body>
-  <h1 class="site-title">News Aggregator</h1>
+  <div class="site-title">NEWS AGGREGATOR</div>
+
+  <div class="mode">
+    <input type="checkbox" class="checkbox" id="checkbox">
+    <label for="checkbox" class="label">
+    <img class="fa-sun" src="img\sun.jpg"></img>
+    <p class="bright">Tap to Bright</p>
+    <p class="dark">Tap to Dark</p>
+    </label>
+  </div>
   
   <div class="search-container">
     <input type="text" name="search" id="search" placeholder="Type and press enter to search..." />
   </div>
 
   <ul id="news-articles">
+  <script src="scripts/index.js"></script>
 
   </ul>
 </body>
