@@ -12,19 +12,18 @@ function getNews(news){
   let output="";
   if(news.totalResults>0){
     news.articles.forEach(ind=>{
-      output+= 
-        ` <section class="container">
-          <li class="article"><a class="article-link" href="${ind.url}" target="_blank">
-          <div class="img_area">
-          <img src="${ind.urlToImage}" class="article-img" alt="${ind.title}"></img>
-          </div>
-          <h2 class="article-title">${ind.title}</h2>
-          <p class="article-description">${ind.description || "Description not available"}</p> <br>
-          <span class="article-author">-${ind.author? ind.author: "Anon"}</span><br>
-          </a>
-          </li>
-          </section>
-        `;
+      output+= ` <section class="container">
+                 <li class="article"><a class="article-link" href="${ind.url}" target="_blank">
+                 <div class="img_area">
+                 <img src="${ind.urlToImage}" class="article-img" alt="${ind.title}"></img>
+                 </div>
+                 <h2 class="article-title">${ind.title}</h2>
+                 <p class="article-description">${ind.description || "Description not available"}</p> <br>
+                 <span class="article-author">-${ind.author? ind.author: "Anon"}</span><br>
+                 </a>
+                 </li>
+                 </section>
+                 `;
     });
     article_area.innerHTML=output;
   }
@@ -36,8 +35,7 @@ function getNews(news){
 // Function to retreive news //
 async function retreive(searchValueText=""){
 
-    article_area.innerHTML=
-    '<div class="loader"> <img src="img/loader1.gif" alt="LOADING......."></div>';
+    article_area.innerHTML='<div class="loader"> <img src="img/loader1.gif" alt="LOADING......."></div>';
     
     if(searchValueText==""){
       url=`https://newsapi.org/v2/top-headlines?country=in&apiKey=${apikey}`;
