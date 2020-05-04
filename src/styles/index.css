@@ -15,7 +15,7 @@
 .label:hover{
     cursor: pointer;
 }
-.sun{
+#sun{
     position: relative;
     left:13px;
     top:1px;
@@ -29,7 +29,7 @@
     font-size: 11px;
     width:70px;
     position: absolute;
-    top:25px;
+    top:30px;
     left:95.5%;
 }
 .dark{
@@ -54,7 +54,7 @@ body.light .dark{
     font-weight: bold;
     width:80px;
     position: absolute;
-    top:25px;
+    top:30px;
     left:95.5%;
 }
 body.light{
