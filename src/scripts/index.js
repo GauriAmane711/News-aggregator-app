@@ -29,7 +29,7 @@ function getNews(news){
   }
   else
   { 
-    article_area.innerHTML='<li class="not-found">No article was found based on the search.</li>';
+    article_area.innerHTML='<h3 class="not-found">No article was found based on the search.</h3>';
   }
 };
 // Function to retreive news //
