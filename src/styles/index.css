@@ -120,7 +120,7 @@ body.light #search{
     border-radius: 18px;
     padding-right: 30px;
 }
-li.article{
+.article{
     list-style-type: none;
     display: inline;
 }
@@ -141,7 +141,7 @@ li.article{
     width:200px;
     height:150px;
 }
-h2.article-title{
+.article-title{
     position: relative;
     top:10px;
     left: 15px;
