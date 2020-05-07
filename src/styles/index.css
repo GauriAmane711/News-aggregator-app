@@ -216,22 +216,27 @@ body.light #search{
   
 .site-title{
     position: relative;
-    top:30px;
+    top:40px;
     left:150px;
 }
 #search{
     width:77%;
     font-size: 22px;
 }
-.bright{
-    position: absolute;
-    top:25px;
-    left:90%;
-}
 body.light .dark{
     position: absolute;
     top:25px;
     left:90%;
+}
+.bright{
+    position: absolute;
+    top:5px;
+    left:86.5%;
+}
+body.light .dark{
+    position: absolute;
+    top:5px;
+    left:87%;
 }
 } 
    
